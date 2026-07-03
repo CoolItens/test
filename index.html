@@ -32,32 +32,77 @@
     </script>
 
     <noscript>
-        <img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1300883218718015&ev=PageView&noscript=1"/>
+        <img
+            height="1"
+            width="1"
+            style="display:none"
+            src="https://www.facebook.com/tr?id=1300883218718015&ev=PageView&noscript=1"
+        />
     </noscript>
     <!-- End Meta Pixel Code -->
 
     <script>
+        // Espera 1 segundo para garantir o envio do PageView
         setTimeout(function () {
-            window.location.href = "https://t.me/luannavictoriabot";
+            window.location.href = "https://t.me/Vazadinhoonet_bot";
         }, 1000);
     </script>
 
     <style>
-        body{
-            margin:0;
-            height:100vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            background:#111;
-            color:white;
-            font-family:Arial,sans-serif;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background: #0f0f0f;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .loader {
+            width: 60px;
+            height: 60px;
+            border: 6px solid #2a2a2a;
+            border-top: 6px solid #2AABEE;
+            border-radius: 50%;
+            margin: 25px auto 0;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #b0b0b0;
         }
     </style>
 </head>
 
 <body>
+
+<div class="container">
     <h1>Redirecionando para o Telegram...</h1>
+    <p>Aguarde um instante.</p>
+    <div class="loader"></div>
+</div>
+
 </body>
 </html>
